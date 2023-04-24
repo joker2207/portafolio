@@ -1,5 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    margin: 0;
+    font-family: var(--bs-font-sans-serif);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+#index {
+    background-image: url('../images/Imagenes/fondo-contacto.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 #contacto {
     background-image: url('../images/Imagenes/fondo-contacto.png');
@@ -13,15 +32,48 @@
     background-size: cover;
 }
 
-body {
-    font-family: 'Montserrat', sans-serif;
+#index img {
+    height: 400px;
+}
+
+#index img:hover {
+    height: 410px;
+}
+
+.div-cohete {
+    height: 430px;
+}
+
+#index .input-home p {
+    color: white;
+    font-size: 17px;
+    border: 1px solid white;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+.btn-shadow {
+    background-color: white;
+    color: #370a6d;
+    border-radius: 40px;
+    box-shadow: 0px 0px 5px 1px black
+}
+
+.btn-shadow:hover {
+    background-color: #370a6d;
+    color: white;
+
+}
+
+#index .cohete {
+    height: 400px;
 }
 
 nav a {
     color: #282828;
 }
 
-nav.active {
+nav .active {
     border-radius: 20px;
     border: 1px solid #e20000;
 }
@@ -36,10 +88,17 @@ p {
     color: #6a6a6a;
 }
 
+pp {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
 #contacto textarea {
     height: 180px;
 }
-
 
 .btn-blanco {
     background-color: white;
@@ -88,6 +147,36 @@ p {
     height: auto;
 }
 
+#index footer {
+    font-weight: bold;
+}
+
+#index .fa-whatsapp {
+    color: #fff;
+    position: fixed;
+    right: 70px;
+    bottom: 0px;
+    font-size: 31px;
+    background-color: #370a6d;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#index .fa-linkedin {
+    color: #e20000;
+    font-size: 28px;
+    background-color: white;
+    border-radius: 22px;
+    padding: 8px 8px 4px 8px;
+    margin-left: 10px;
+}
+
+#index .fa-github {
+    font-size: 38px;
+    height: 40px;
+    color: white;
+}
+
 .proyecto p {
     font-size: 14px;
     color: #6a6a6a;
@@ -112,10 +201,15 @@ p {
     color: #e20000;
 }
 
-#proyectos footer a, #sobre-mi footer, #sobre-mi footer a {
+#proyectos footer a,
+#sobre-mi footer,
+#sobre-mi footer a {
     color: #E20000;
+    font-weight: bold;
 }
+
 #proyectos .fa-whatsapp {
+    color: white;
     position: fixed;
     right: 70px;
     bottom: 0px;
@@ -124,21 +218,59 @@ p {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
-.link-rojo a {
-    color: yellow;
-    text-decoration: none;
-}
-#proyectos footer, #proyectos footer a, #sobre-mi footer, #sobre-mi footer a {
+
+
+#proyectos footer,
+#proyectos footer a,
+#sobre-mi footer,
+#sobre-mi footer a {
     color: #E20000;
+}
+
+#sobre-mi footer,
+#sobre-mi footer a {
+    color: red;
+    font-weight: 100;
+    font-weight: bold;
+}
+
+#sobre-mi .fa-whatsapp {
+    color: white;
+    position: fixed;
+    right: 70px;
+    bottom: 0px;
+    font-size: 31px;
+    background-color: #370a6d;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#sobre-mi .fa-linkedin {
+    color: white;
+    font-size: 33px;
+    background-color: red;
+    border-radius: 22px;
+    padding: 8px 8px 4px 8px;
+    margin-left: 10px;
+}
+
+#sobre-mi .fa-github {
+    font-size: 43px;
+    height: 40px;
+}
+
+#sobre-mi img {
+    border-radius: 50%;
 }
 
 #contacto footer,
 #contacto footer a {
     color: white;
-    font-weight: 100;
+    font-weight: bold;
 }
 
 #contacto .fa-whatsapp {
+    color: white;
     position: fixed;
     right: 70px;
     bottom: 0px;
@@ -160,4 +292,78 @@ p {
 #contacto .fa-github {
     font-size: 38px;
     height: 40px;
+}
+
+#sobre-mi img {
+    border-radius: 8%;
+}
+
+#stack {
+    background: rgb(58, 149, 180);
+    background: linear-gradient(90deg, rgba(58, 149, 180, 1) 21%, rgba(240, 253, 29, 1) 52%, rgba(247, 69, 252, 1) 81%);
+}
+
+#stack h2 {
+    color: white;
+    font-size: 24px;
+}
+
+#stack h3 {
+    font-size: 14px;
+    color: #282828;
+    font-weight: 300;
+}
+
+#stack .tecnologia {
+    background-color: white;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+#estack .tecnologia i {
+    font-size: 60px;
+}
+
+#experiencia h2 {
+    color: #370a6d;
+    font-size: 24px;
+
+}
+
+#experiencia h3 {
+    color: #646464;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#experiencia h4 {
+    font-size: 17px;
+    color: #370a6d;
+}
+
+#experiencia h5 {
+    color: #370a6d;
+    font-size: 14px;
+}
+
+#experiencia p {
+    color: #370a6d;
+    font-size: 16px;
+}
+
+#formacion h2{
+    color: red;
+}
+
+#idiomas .fas{
+    background-color: #370a6d;
+    font-size: 80px;
+    color: white;
+}
+#idiomas .card {
+    background-color: #370A6D;
+    border-radius: 15px;
+    padding: 40px 0;
 }
