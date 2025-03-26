@@ -1,0 +1,265 @@
+/* Estilos generales */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    background-color: #f6f6f6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    color: #E20000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #C60000;
+}
+
+/* Botón rojo */
+.btn-rojo {
+    background-color: #E20000;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn-rojo:hover {
+    background-color: #C60000;
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+}
+
+.nav-link {
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #E20000;
+}
+
+.nav-link.active {
+    color: #E20000;
+    border-bottom: 2px solid #E20000;
+}
+
+/* Sección Sobre Mi */
+#sobre-mi {
+    padding-top: 20px;
+}
+
+/* Sección Stack */
+#stack {
+    background-color: #f0f0f0;
+    padding: 30px 0 50px;
+}
+
+#stack h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.tecnologia {
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 0 10px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.tecnologia:hover {
+    transform: translateY(-5px);
+}
+
+.tecnologia h3 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.tecnologia i {
+    font-size: 50px;
+    color: #E20000;
+}
+
+/* Barras de progreso */
+.progress {
+    height: 15px;
+    margin-bottom: 15px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background-color: #E20000;
+    color: white;
+    line-height: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 5px;
+    transition: width 0.3s linear;
+    position: relative;
+    overflow: visible;
+}
+
+/* Secciones de experiencia y formación */
+#experiencia, #formacion {
+    padding: 30px 0;
+}
+
+#experiencia h2, #formacion h2 {
+    color: #333;
+    margin-bottom: 25px;
+}
+
+#experiencia h3, #formacion h3 {
+    color: #E20000;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+#experiencia h4, #formacion h4 {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+#experiencia h5, #formacion h5 {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.imagen-experiencia {
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección de idiomas y hobbies */
+#idiomas {
+    padding: 30px 0;
+    background-color: #f0f0f0;
+}
+
+.card-idioma {
+    border-radius: 10px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.card-idioma .card {
+    background-color: #E20000;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.card-idioma i {
+    font-size: 40px;
+}
+
+.card-idioma h2 {
+    font-size: 20px;
+    color: #E20000;
+    margin-bottom: 15px;
+}
+
+.card-idioma ul {
+    padding-left: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #fff;
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+}
+
+footer a {
+    margin-right: 15px;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #E20000;
+}
+
+footer i {
+    font-size: 24px;
+}
+
+.div-whatsapp {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 999;
+}
+
+.div-whatsapp a {
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.div-whatsapp a:hover {
+    transform: scale(1.1);
+}
+
+.div-whatsapp i {
+    font-size: 32px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .tecnologia {
+        margin-bottom: 20px;
+    }
+    
+    .card-idioma {
+        margin-bottom: 20px;
+    }
+}
+
+/* Ajustes para la imagen de perfil */
+.img-fluid {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajustes para imágenes en blanco y negro */
+.baw {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.baw:hover {
+    filter: grayscale(0%);
+}
